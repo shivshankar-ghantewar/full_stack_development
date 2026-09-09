@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            display: flex;
+            flex-wrap: wrap;
+            /* flex-direction: column; */
+            flex-direction: row;
+        }
+         .box{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            margin: 4px;
+            display: flex;
+            /* horizontal alignment */
+            justify-content: center;
+            /* vertical alignment */
+            align-items: center;
+         }
+
+         /* #img{
+            background-image: url(lord-ganesh.jpg);
+         } */
+      img{
+        
+        height: 100px;
+        width: 100px;
+        z-index: 0;
+      }
+     
+   
+
+    </style>
+</head>
+<body>
+      <div id="container">
+               <div class="box" id="img">
+                <img src="lord-ganesh.jpg" alt="">
+                
+            </div>
+               <div class="box">second</div>
+               <div class="box">third</div>
+               <div class="box">fourth</div>
+               <div class="box">fifth</div>
+               <div class="box">sixth</div>
+               <div class="box">seventh</div>
+               <div class="box">eighth</div>
+               <div class="box">ninth</div>
+               <div class="box">tenth</div>
+               <div class="box">second</div>
+               <div class="box">third</div>
+               <div class="box">fourth</div>
+               <div class="box">fifth</div>
+               <div class="box">sixth</div>
+               <div class="box">seventh</div>
+               <div class="box">eighth</div>
+               <div class="box">ninth</div>
+               <div class="box">tenth</div>
+      </div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .container{
+             display: flex;
+             gap: 4px;
+        }
+
+        .main{
+             height:200px ;
+             width: 200px;
+        }
+
+        #translate{
+           
+            background-color: #00ffff;
+            transition: all 2s;
+            
+        }
+
+        #translate:hover{
+             /* moving object to x,y and z axis */
+
+            /* transform: translateX(30px); */
+            /* transform: translateY(50px); */
+            transform: translate(200px,200px); 
+
+        }
+
+        #scale{
+            background-color: blue;
+            transition: all 2s;
+
+        }
+
+        #scale:hover{
+            /* increase or decrease scale of object */
+            transform: scale(2);   
+        }
+
+        #rotate{
+          background-color: black;
+          transition: all 2s;
+        }
+
+         #rotate:hover{
+          /* to rotate object  */
+          /* transform: rotateX(60deg); */
+          transform: rotateY(50deg);
+          
+        }
+
+        #skew{
+           
+            background-color: chartreuse;
+            transition: all 2s;
+        }
+
+         #skew:hover{
+            /* stretching objects */
+             /* transform: skewX(45deg); */
+             transform:skewY(45deg);
+        }
+    </style>
+</head>
+<body>
+        <div class="container">
+              <div class="main" id="translate"></div>
+              <div class="main" id="scale"></div>
+              <div class="main" id="rotate"></div>
+              <div class="main" id="skew"></div>
+        </div>
+</body>
+</html>
