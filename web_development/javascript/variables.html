@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="display()"> button</button>
+    <script>
+        var a=10; // global variable
+        function display(){
+         var b=20;  // Local variable
+         document.write("inside block a:",a ,"<br>");
+         document.write("inside block b:",b ,"<br>");
+        }
+         document.write("outside block a:",a ,"<br>");
+         document.write("outside block b:",b ,"<br>");  // not accessible outside the function
+
+        //  display();// direct function calling
+    </script>
+</body>
+</html>

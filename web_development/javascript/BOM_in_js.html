@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button"  onclick="clickme()" value="alert" name="alert"> <br> <br>
+    <input type="button"  onclick="confirm1()" value="confirm" name="confirm"> <br> <br>
+    <input type="button"  onclick="prompt1()" value="prompt" name="prompt"> <br> <br>
+    <input type="button"  onclick="open1()" value="open" name="open"> <br> <br>
+
+
+    <div id="clock_div">
+
+    </div>
+<script>
+    // alert
+      function clickme(){
+        alert("button clicked");
+      }
+
+      // confirm 
+      function confirm1()
+      {
+        var v=confirm("do you want to delete msg");
+        if(v==true)
+         {
+            alert("msg deleted");
+         }
+         else{
+            alert("msg not deleted");
+         }
+      }
+
+      // prompt : prompt can take value from user 
+       function prompt1()
+       {
+        var p=prompt("enter your name");
+          alert("Hi "+p);
+       }
+
+       // open: use to open website
+       function open1()
+       {
+        open("https://search.brave.com/search?q=google");
+       }
+
+       // settimeout: it performs action repeatedly after given duration
+          function clock()
+          {
+            time=new Date();
+            // document.write(time);
+            document.getElementById('clock_div').innerHTML=time;
+
+          }
+
+        setInterval(clock,1000);
+       
+       
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .highlight{
+            color: aqua;
+            background-color: blueviolet;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>  <h1>byname and bytag</h1>
+       <input type="text" name="username" id="u_name">
+       <button onclick="show()">click me</button>
+       <h1></h1>  <br><br>
+
+       <h1>Bytagname</h1>
+       <H4 name="abc">i</H4>
+       <H4 name="abc">am</H4>
+       <H4 name="abc">javascript</H4>
+
+       <input type="button" value="submit" onclick="show2()"> <br> <br>
+
+       <h1>innerHtml</h1>
+       <input type="button" value="submit" onclick="show3()">
+       <div id="showdiv"></div>
+
+
+       <h1 id="text">using style property</h1> <br><br>
+
+       <h2 id="shiv">class styling</h2> <br>
+       <button onclick="add_style()">add style</button>
+       <button onclick="remove_style()">remove style</button>
+
+
+       
+
+<script>
+    function show()
+    {
+        var data=document.getElementsByName('username')[0].value; // byname
+        document.getElementsByTagName('h1')[0].innerText="hello "+data; // bytagname
+    }
+
+    function show2()
+    {
+        var x=document.getElementsByName("abc");
+        alert("total elements are:"+x.length)
+    }
+
+    
+        function show3()
+      {
+          var a = "<input type='text' name='name'><br><br><input type='text' name='password'>";
+          document.getElementById('showdiv').innerHTML=a;
+      }
+   
+          var b=document.getElementById('text');
+          b.style.color="red";
+          b.style.backgroundColor="blue";
+
+         function add_style()
+         {
+             var s=document.getElementById('shiv');
+              s.classList.add("highlight");
+         }
+
+         function remove_style()
+         {
+             var s=document.getElementById('shiv');
+              s.classList.remove("highlight");
+         }
+</script>
+</body>
+</html>
