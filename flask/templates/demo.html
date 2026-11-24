@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/demo.css')}}">
+
+    <style>
+        h2{
+            color: aqua;
+            font-size: large;
+        }
+
+        img{
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: brown;">welcome to flask</h1>
+    <h2>we are python developer</h2>
+    <h3>fortune cloud pune</h3>
+    <button onclick="myclick()">click me</button>
+    <img   src="{{url_for('static',filename='images/flask.png')}}" alt="">
+
+    <script src="{{url_for('static',filename='js/demo.js')}}"></script>
+</body>
+</html>
